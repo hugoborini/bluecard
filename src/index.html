@@ -9,6 +9,50 @@
     <title>bluecard</title>
   </head>
   <body>
-    hello
+    <section>
+      <div class="card">
+        <div class="card__puce">
+          <img src="asset/puce.png" alt="puce" />
+        </div>
+        <div class="card__number">
+          <p>
+            <span>card number</span> <br />
+            42 42 42 42 42
+          </p>
+        </div>
+        <div class="card__holder">
+          <p>
+            <span>card holder name</span><br />
+            Hugo
+          </p>
+        </div>
+        <div class="card__expiration">
+          <p>
+            <span>expiration</span><br />
+            10/22
+          </p>
+        </div>
+      </div>
+      <div class="form">
+        <div>
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" />
+        </div>
+        <div>
+          <label for="card-number">Card Number</label><br />
+          <input type="text" id="card-number" name="card-number" />
+        </div>
+        <div class="form-end">
+          <div class="form-end__expiration">
+            <label for="expiration">Expiration (mm/yy)</label><br />
+            <input type="text" id="expiration" name="expiration" />
+          </div>
+          <div>
+            <label for="security-code">CVV</label><br />
+            <input type="text" id="security-code" name="security-code" />
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
