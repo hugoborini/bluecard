@@ -1,3 +1,4 @@
+
 let input = document.querySelectorAll("input");
 let name_txt = document.querySelector(".card__holder");
 let card_nb_txt = document.querySelector(".card__number");
