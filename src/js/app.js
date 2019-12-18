@@ -2,6 +2,8 @@ let input = document.querySelectorAll("input");
 let name_txt = document.querySelector(".card__holder");
 let card_nb_txt = document.querySelector(".card__number");
 let exp_txt = document.querySelector(".card__expiration");
+let card = document.querySelector(".card");
+console.log(card);
 
 let name = input[0];
 let card_nb = input[1];
@@ -30,6 +32,14 @@ card_nb.addEventListener("keyup", function(event) {
   } else {
     card_nb_txt.innerHTML =
       "<p> <span>card number</span> <br />" + card_nb.value + "</p>";
+  }
+  if (card_nb.value[0] === "4") {
+    card.className = "card visa";
+  } else {
+    card.className = "card";
+  }
+  if (card_nb.value[0] === "3") {
+    card.className = "card american";
   }
 });
 
