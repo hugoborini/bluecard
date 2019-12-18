@@ -1,3 +1,6 @@
+body {
+  font-family: monospace;
+}
 .card {
   width: 250px;
   height: 150px;
@@ -11,6 +14,7 @@
     "b b"
     "c d";
   align-items: center;
+  box-shadow: 3px 5px 5px black;
 
   p {
     color: white;
@@ -48,4 +52,10 @@ section {
   .form-end__expiration {
     margin-right: 10px;
   }
+}
+input {
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
