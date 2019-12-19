@@ -29,7 +29,12 @@ body {
   }
   .card__logo {
     justify-self: flex-end;
-    padding-right: 10px;
+    padding-right: 15px;
+
+    img {
+      width: 70px;
+      height: 50px;
+    }
   }
 
   .card__number {

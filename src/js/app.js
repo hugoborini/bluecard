@@ -3,7 +3,8 @@ let name_txt = document.querySelector(".card__holder");
 let card_nb_txt = document.querySelector(".card__number");
 let exp_txt = document.querySelector(".card__expiration");
 let card = document.querySelector(".card");
-console.log(card);
+
+let img = document.querySelector(".card__logo img");
 
 let name = input[0];
 let card_nb = input[1];
@@ -40,8 +41,20 @@ card_nb.addEventListener("keyup", function(event) {
   }
   if (card_nb.value[0] === "3") {
     card.className = "card american";
+    img.setAttribute(
+      "src",
+      "https://img.bfmtv.com/c/1000/600/ed6/e5461d945078f6122e36e9a73208c.png"
+    );
+    img.setAttribute("alt", "logo_american");
+  }
+  if (card_nb.value.length === 0) {
+    img.setAttribute(
+      "src",
+      "http://assets.stickpng.com/thumbs/58482363cef1014c0b5e49c1.png"
+    );
   }
 });
+console.log(img);
 
 exp.addEventListener("keyup", function(event) {
   event.preventDefault();
