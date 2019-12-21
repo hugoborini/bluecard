@@ -3,8 +3,9 @@ let name_txt = document.querySelector(".card__holder");
 let card_nb_txt = document.querySelector(".card__number");
 let exp_txt = document.querySelector(".card__expiration");
 let card = document.querySelector(".card");
-
 let img = document.querySelector(".card__logo img");
+let button = document.querySelector(".form__button--modif");
+console.log(button);
 
 let name = input[0];
 let card_nb = input[1];
@@ -13,6 +14,10 @@ let exp = input[2];
 let name_default = "John Doe";
 let nb_default = "42 42 42 42 42";
 let exp_default = "10/22";
+
+button.addEventListener("click", function() {
+  alert("merci de votre commande");
+});
 
 name.addEventListener("keyup", function(event) {
   event.preventDefault();
@@ -66,7 +71,6 @@ card_nb.addEventListener("keyup", function(event) {
     );
   }
 });
-console.log(img);
 
 exp.addEventListener("keyup", function(event) {
   event.preventDefault();

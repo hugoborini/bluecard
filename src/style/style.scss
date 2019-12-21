@@ -81,3 +81,13 @@ input {
   margin-bottom: 10px;
   margin-top: 5px;
 }
+
+.form__button {
+  display: flex;
+  justify-content: center;
+}
+
+.form__button--modif {
+  width: 300px;
+  background-color: gray;
+}
