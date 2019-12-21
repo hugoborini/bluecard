@@ -36,6 +36,10 @@ card_nb.addEventListener("keyup", function(event) {
   }
   if (card_nb.value[0] === "4") {
     card.className = "card visa";
+    img.setAttribute(
+      "src",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+    );
   } else {
     card.className = "card";
   }
@@ -47,10 +51,18 @@ card_nb.addEventListener("keyup", function(event) {
     );
     img.setAttribute("alt", "logo_american");
   }
+  if (card_nb.value[0] === "5") {
+    card.className = "card master";
+    img.setAttribute(
+      "src",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg"
+    );
+    img.setAttribute("alt", "logo_master");
+  }
   if (card_nb.value.length === 0) {
     img.setAttribute(
       "src",
-      "http://assets.stickpng.com/thumbs/58482363cef1014c0b5e49c1.png"
+      "https://www.humanprogresscenter.com/wp-content/uploads/2016/05/fond-gris.jpg"
     );
   }
 });
